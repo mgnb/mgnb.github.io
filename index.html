@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>首页</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/home_page.css">
+    <noscript>
+        <link rel="stylesheet" href="css/noscript.css"/>
+    </noscript>
+</head>
+<body>
+<div id="wrapper">
+    <header id="header">
+        <div class="logo">
+            <img src="images/head_portrait.jpg" class="logo">
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>道阻且长,行则将至</h1>
+                <p>不会摄影的潜水员不是一个好的旅行家 - IDPA认证射手 - ASFC认证飞行员.<br>
+                </p>
+            </div>
+        </div>
+        <nav>
+            <script type="text/javascript">
+                function ts() {
+                    alert("来自明哥提示～该功能正在开发中.....")
+                }
+            </script>
+            <ul>
+                <li><a href="https://blog.csdn.net/weixin_40845165" target="_blank">博客</a></li><!-- 按钮1-->
+                <li><a href="Resume.html#Home" target="_blank">履历</a></li><!-- 按钮2-->
+                <li><a href="#"  onclick="ts()">待添加</a></li><!-- 按钮3-->
+                <li><a href="#"  onclick="ts()">待添加</a></li><!-- 按钮4-->
+            </ul>
+        </nav>
+    </header>
+    <footer id="footer">
+        <p class="copyright">© 2020-明哥</p><!-- 版权-->
+		<p id="span" style="font-size: 10px;color: #999999"></p>
+
+		<script type="text/javascript">
+			function runtime(){
+				// 初始时间，日/月/年 时:分:秒
+				X = new Date("6/16/2020 0:0:00");
+				Y = new Date();
+				T = (Y.getTime()-X.getTime());
+				M = 24*60*60*1000;
+				a = T/M;
+				A = Math.floor(a);
+				b = (a-A)*24;
+				B = Math.floor(b);
+				c = (b-B)*60;
+				C = Math.floor((b-B)*60);
+				D = Math.floor((c-C)*60);
+				//信息写入到DIV中
+				span.innerHTML = "本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"
+			}
+			setInterval(runtime, 1000);
+		</script>
+    </footer>
+</div>
+<div id="bg">
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main_one.js"></script>
+<script type="text/javascript">document.oncontextmenu = function (t) {
+    window.event && (t = window.event);
+    try {
+        var e = t.srcElement;
+        return "INPUT" == e.tagName && "text" == e.type.toLowerCase() || "TEXTAREA" == e.tagName ? !0 : !1
+    } catch (n) {
+        return !1
+    }
+}, document.onpaste = function (t) {
+    window.event && (t = window.event);
+    try {
+        var e = t.srcElement;
+        return "INPUT" == e.tagName && "text" == e.type.toLowerCase() || "TEXTAREA" == e.tagName ? !0 : !1
+    } catch (n) {
+        return !1
+    }
+}, document.oncopy = function (t) {
+    window.event && (t = window.event);
+    try {
+        var e = t.srcElement;
+        return "INPUT" == e.tagName && "text" == e.type.toLowerCase() || "TEXTAREA" == e.tagName ? !0 : !1
+    } catch (n) {
+        return !1
+    }
+}, document.oncut = function (t) {
+    window.event && (t = window.event);
+    try {
+        var e = t.srcElement;
+        return "INPUT" == e.tagName && "text" == e.type.toLowerCase() || "TEXTAREA" == e.tagName ? !0 : !1
+    } catch (n) {
+        return !1
+    }
+}, document.onselectstart = function (t) {
+    window.event && (t = window.event);
+    try {
+        var e = t.srcElement;
+        return "INPUT" == e.tagName && "text" == e.type.toLowerCase() || "TEXTAREA" == e.tagName ? !0 : !1
+    } catch (n) {
+        return !1
+    }
+};</script>
+<!--<audio autoplay>-->
+<!--<source src="/musicnj.mp3" type="audio/mpeg">&lt;!&ndash; ！BGM！&ndash;&gt;-->
+<!--</audio>-->
+
+</body>
+</html>
